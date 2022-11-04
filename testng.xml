@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+	<listener class-name="resources.Listeners"></listener>
+</listeners>
+
+	<test name="SignIn Test" parallel="methods">
+		<classes>
+			<class name="www.logytalks.com.ClickSignInBtn"></class>
+		</classes>
+	</test>
+
+
+</suite> <!-- Suite -->

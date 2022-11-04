@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-04T18:51:32 IST" name="Default suite" finished-at="2022-11-04T18:52:37 IST" duration-ms="65231">
+    <groups>
+    </groups>
+    <test started-at="2022-11-04T18:51:32 IST" name="Default test" finished-at="2022-11-04T18:52:37 IST" duration-ms="65231">
+      <class name="www.logytalks.com.RegistrationTest">
+        <test-method is-config="true" signature="navigateToRegisterPage()[pri:0, instance:www.logytalks.com.RegistrationTest@2794eab6]" started-at="2022-11-04T18:51:33 IST" name="navigateToRegisterPage" finished-at="2022-11-04T18:51:52 IST" duration-ms="19079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToRegisterPage -->
+        <test-method signature="registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:www.logytalks.com.RegistrationTest@2794eab6]" started-at="2022-11-04T18:51:52 IST" name="registration" data-provider="getData" finished-at="2022-11-04T18:51:55 IST" duration-ms="2627" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rahulsingh7456@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rahul@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rahul@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Rahul]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Dev]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:www.logytalks.com.RegistrationTest@2794eab6]" started-at="2022-11-04T18:51:55 IST" name="tearDown" finished-at="2022-11-04T18:51:57 IST" duration-ms="2060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="navigateToRegisterPage()[pri:0, instance:www.logytalks.com.RegistrationTest@2794eab6]" started-at="2022-11-04T18:51:57 IST" name="navigateToRegisterPage" finished-at="2022-11-04T18:52:14 IST" duration-ms="17113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToRegisterPage -->
+        <test-method signature="registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:www.logytalks.com.RegistrationTest@2794eab6]" started-at="2022-11-04T18:52:14 IST" name="registration" data-provider="getData" finished-at="2022-11-04T18:52:17 IST" duration-ms="2695" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rahulsingh103@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rahul@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rahul@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Dae]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:www.logytalks.com.RegistrationTest@2794eab6]" started-at="2022-11-04T18:52:17 IST" name="tearDown" finished-at="2022-11-04T18:52:17 IST" duration-ms="471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="navigateToRegisterPage()[pri:0, instance:www.logytalks.com.RegistrationTest@2794eab6]" started-at="2022-11-04T18:52:17 IST" name="navigateToRegisterPage" finished-at="2022-11-04T18:52:34 IST" duration-ms="17070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToRegisterPage -->
+        <test-method signature="registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:www.logytalks.com.RegistrationTest@2794eab6]" started-at="2022-11-04T18:52:34 IST" name="registration" data-provider="getData" finished-at="2022-11-04T18:52:37 IST" duration-ms="2644" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rahulsingh2564@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rahul@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rahul@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Honey]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Low]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:www.logytalks.com.RegistrationTest@2794eab6]" started-at="2022-11-04T18:52:37 IST" name="tearDown" finished-at="2022-11-04T18:52:37 IST" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="softAssertResult()[pri:0, instance:www.logytalks.com.RegistrationTest@2794eab6]" started-at="2022-11-04T18:52:37 IST" name="softAssertResult" finished-at="2022-11-04T18:52:37 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [https://logytalks-live.itechnolabs.tech/register] but found [https://logytalks-live.itechnolabs.tech/email/verify],
+expected [https://logytalks-live.itechnolabs.tech/register] but found [https://logytalks-live.itechnolabs.tech/email/verify],
+expected [https://logytalks-live.itechnolabs.tech/register] but found [https://logytalks-live.itechnolabs.tech/email/verify]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [https://logytalks-live.itechnolabs.tech/register] but found [https://logytalks-live.itechnolabs.tech/email/verify],
+expected [https://logytalks-live.itechnolabs.tech/register] but found [https://logytalks-live.itechnolabs.tech/email/verify],
+expected [https://logytalks-live.itechnolabs.tech/register] but found [https://logytalks-live.itechnolabs.tech/email/verify]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at www.logytalks.com.RegistrationTest.softAssertResult(RegistrationTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:222)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- softAssertResult -->
+      </class> <!-- www.logytalks.com.RegistrationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

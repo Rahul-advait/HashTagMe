@@ -1,95 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-09T18:04:50 IST" name="Default suite" finished-at="2022-11-09T18:06:47 IST" duration-ms="116451">
+  <suite started-at="2022-11-09T19:05:26 IST" name="Default suite" finished-at="2022-11-09T19:06:12 IST" duration-ms="45403">
     <groups>
     </groups>
-    <test started-at="2022-11-09T18:04:50 IST" name="Default test" finished-at="2022-11-09T18:06:47 IST" duration-ms="116451">
+    <test started-at="2022-11-09T19:05:26 IST" name="Default test" finished-at="2022-11-09T19:06:12 IST" duration-ms="45403">
       <class name="www.logytalks.com.YopmailConfirm">
-        <test-method is-config="true" signature="setup()[pri:0, instance:www.logytalks.com.YopmailConfirm@5677323c]" started-at="2022-11-09T18:04:50 IST" name="setup" finished-at="2022-11-09T18:04:57 IST" duration-ms="6449" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:www.logytalks.com.YopmailConfirm@4d154ccd]" started-at="2022-11-09T19:05:28 IST" name="setup" finished-at="2022-11-09T19:05:34 IST" duration-ms="6132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="emailConfirm()[pri:0, instance:www.logytalks.com.YopmailConfirm@5677323c]" started-at="2022-11-09T18:04:57 IST" name="emailConfirm" finished-at="2022-11-09T18:06:14 IST" duration-ms="77664" status="PASS">
+        <test-method signature="emailConfirm(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:www.logytalks.com.YopmailConfirm@4d154ccd]" started-at="2022-11-09T19:05:34 IST" name="emailConfirm" data-provider="getData" finished-at="2022-11-09T19:05:43 IST" duration-ms="9121" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rahulsingh7456@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rahul@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rahul@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Rahul]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Dev]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emailConfirm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:www.logytalks.com.YopmailConfirm@5677323c]" started-at="2022-11-09T18:06:14 IST" name="tearDown" finished-at="2022-11-09T18:06:47 IST" duration-ms="32256" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[disconnected: unable to connect to renderer
-  (failed to check if window was closed: disconnected: unable to connect to renderer)
-  (Session info: chrome=107.0.5304.88)
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6ed9c6b176f30ef931ac6d4c432767c7, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ITECHN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58741}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58741/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6ed9c6b176f30ef931ac6d4c432767c7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: unable to connect to renderer
-  (failed to check if window was closed: disconnected: unable to connect to renderer)
-  (Session info: chrome=107.0.5304.88)
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6ed9c6b176f30ef931ac6d4c432767c7, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ITECHN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58741}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58741/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6ed9c6b176f30ef931ac6d4c432767c7
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
-at www.logytalks.com.YopmailConfirm.tearDown(YopmailConfirm.java:26)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:www.logytalks.com.YopmailConfirm@4d154ccd]" started-at="2022-11-09T19:05:43 IST" name="tearDown" finished-at="2022-11-09T19:05:44 IST" duration-ms="490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:www.logytalks.com.YopmailConfirm@4d154ccd]" started-at="2022-11-09T19:05:44 IST" name="setup" finished-at="2022-11-09T19:05:48 IST" duration-ms="4572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="emailConfirm(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:www.logytalks.com.YopmailConfirm@4d154ccd]" started-at="2022-11-09T19:05:48 IST" name="emailConfirm" data-provider="getData" finished-at="2022-11-09T19:05:57 IST" duration-ms="8898" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rahulsingh103@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rahul@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rahul@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Dae]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailConfirm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:www.logytalks.com.YopmailConfirm@4d154ccd]" started-at="2022-11-09T19:05:57 IST" name="tearDown" finished-at="2022-11-09T19:05:57 IST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:www.logytalks.com.YopmailConfirm@4d154ccd]" started-at="2022-11-09T19:05:57 IST" name="setup" finished-at="2022-11-09T19:06:02 IST" duration-ms="4714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="emailConfirm(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:www.logytalks.com.YopmailConfirm@4d154ccd]" started-at="2022-11-09T19:06:02 IST" name="emailConfirm" data-provider="getData" finished-at="2022-11-09T19:06:11 IST" duration-ms="9234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rahulsingh2564@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rahul@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rahul@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Honey]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Low]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailConfirm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:www.logytalks.com.YopmailConfirm@4d154ccd]" started-at="2022-11-09T19:06:11 IST" name="tearDown" finished-at="2022-11-09T19:06:12 IST" duration-ms="404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -8,7 +8,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import Base.BasePage;
-import Base.ExtentManager;
 
 public class YopmailConfirm extends BasePage {
 	public YopmailConfirm() throws IOException {

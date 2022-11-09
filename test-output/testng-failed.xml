@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="www.logytalks.com.RegistrationTest">
+      <class name="www.logytalks.com.YopmailConfirm">
         <methods>
-          <include name="softAssertResult"/>
-          <include name="registration"/>
-          <include name="navigateToRegisterPage"/>
           <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="emailConfirm"/>
         </methods>
-      </class> <!-- www.logytalks.com.RegistrationTest -->
+      </class> <!-- www.logytalks.com.YopmailConfirm -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

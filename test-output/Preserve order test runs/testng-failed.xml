@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Preserve order test runs]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Regression 1(failed)">
+    <classes>
+      <class name="www.logytalks.com.ClickSignInBtn">
+        <methods>
+          <include name="clickRegistrationbtn"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- www.logytalks.com.ClickSignInBtn -->
+      <class name="www.logytalks.com.ClickSiginBtnDn">
+        <methods>
+          <include name="clickRegistrationbtnDn"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- www.logytalks.com.ClickSiginBtnDn -->
+    </classes>
+  </test> <!-- Regression 1(failed) -->
+</suite> <!-- Failed suite [Preserve order test runs] -->

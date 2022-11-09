@@ -111,16 +111,14 @@ public class BasePage {
 
 	}
 
-	public void yopmailConfirmation() {
-		driver.get("https://yopmail.com/en/");
-
-		driver.findElement(By.cssSelector("#login")).sendKeys("johncena1234");
-
-		driver.findElement(By.cssSelector("button")).click();
-
-		driver.switchTo().frame("ifmail");
-
-		driver.findElement(By.linkText("Verify Email Address")).click();
+	public boolean matchUrl(String expectedUrl, String currentUrl) {
+		if (expectedUrl.equals(currentUrl)) {
+			ExtentManager.pass("Reached correct url");
+			return true;
+		} else {
+			ExtentManager.fail("Reached incorrect url");
+			return false;
+		}
 
 	}
 }

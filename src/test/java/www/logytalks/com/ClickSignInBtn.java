@@ -38,8 +38,8 @@ public class ClickSignInBtn extends Hooks {
 		try {
 			AssertJUnit.assertEquals(expectedUrl, driver.getCurrentUrl());
 			ExtentManager.pass("Navigated to register page");
-		} catch (Throwable pageNavigationError) {
-			ExtentManager.pass("Didn't navigated to register page");
+		} catch (Exception e) {
+			ExtentManager.fail(e.toString());
 		}
 		RegistrationPage register = new RegistrationPage(driver);
 		register.getlogo().click();

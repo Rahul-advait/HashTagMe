@@ -9,10 +9,10 @@ import org.testng.AssertJUnit;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import Base.BasePage;
 import Base.ExtentManager;
 import Base.Hooks;
 import pageObjects.HomePage;
+
 @Listeners(resources.Listeners.class)
 public class ClickSiginBtnDn extends Hooks {
 
@@ -36,9 +36,9 @@ public class ClickSiginBtnDn extends Hooks {
 		String expectedUrl = "https://logytalks-live.itechnolabs.tech/register";
 		try {
 			AssertJUnit.assertEquals(expectedUrl, driver.getCurrentUrl());
-			System.out.println("Navigated to correct webpage");
-		} catch (Throwable pageNavigationError) {
-			System.out.println("Didn't navigate to correct webpage");
+			ExtentManager.pass("Reached Signin page");
+		} catch (Exception e) {
+			ExtentManager.fail(e.toString());
 		}
 
 	}

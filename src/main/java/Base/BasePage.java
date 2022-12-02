@@ -3,6 +3,11 @@ package Base;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -12,7 +17,6 @@ import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -22,8 +26,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.DataProvider;
 
 public class BasePage {
+
 	public static WebDriver driver;
 	private String url;
+	private String title;
 	private Properties prop;
 	public static String screenShotDestinationPath;
 
@@ -36,27 +42,30 @@ public class BasePage {
 
 	public WebDriver getDriver() throws IOException {
 
-		if (prop.getProperty("browser").equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + "\\src\\main\\java\\drivers\\chromedriver.exe");
+		if (driver == null) {
 
-			driver = new ChromeDriver();
+			if (prop.getProperty("browser").equals("chrome")) {
+				System.setProperty("webdriver.chrome.driver",
+						System.getProperty("user.dir") + "\\src\\main\\java\\drivers\\chromedriver.exe");
 
-		} else if (prop.getProperty("browser").equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver",
-					System.getProperty("user.dir") + "\\src\\main\\java\\drivers\\geckodriver.exe");
+				driver = new ChromeDriver();
 
-			driver = new FirefoxDriver();
-		} else {
-			System.setProperty("webdriver.edge.driver",
-					System.getProperty("user.dir") + "\\src\\main\\java\\drivers\\msedgedriver.exe");
+			} else if (prop.getProperty("browser").equals("firefox")) {
+				System.setProperty("webdriver.gecko.driver",
+						System.getProperty("user.dir") + "\\src\\main\\java\\drivers\\geckodriver.exe");
 
-			driver = new EdgeDriver();
+				driver = new FirefoxDriver();
+			} else {
+				System.setProperty("webdriver.edge.driver",
+						System.getProperty("user.dir") + "\\src\\main\\java\\drivers\\msedgedriver.exe");
+
+				driver = new EdgeDriver();
+			}
+
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+
 		}
-
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-
 		return driver;
 	}
 
@@ -90,10 +99,36 @@ public class BasePage {
 	public String timestamp() {
 		return new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
 	}
+	
+	public String today() {
+		return new SimpleDateFormat("d").format(new Date());
+	}
+	
+	public String currentTime() {
+		return new SimpleDateFormat("HH-mm").format(new Date());
+	}
+
+	public boolean matchUrl(String expectedUrl, String currentUrl) {
+		if (expectedUrl.equals(currentUrl)) {
+			ExtentManager.pass("Reached correct url");
+			return true;
+		} else {
+			ExtentManager.fail("Reached incorrect url");
+			return false;
+		}
+
+	}
+
+	@Target(ElementType.METHOD)
+	@Retention(RetentionPolicy.RUNTIME)
+	public @interface RowNumber {
+		String rowNumber() default "";
+	}
 
 	@DataProvider
-	public Object[][] getData() throws IOException {
+	public Object[][] getData(Method method) throws IOException {
 
+		RowNumber rows = method.getAnnotation(RowNumber.class);
 		Object[][] data = new Object[3][6];
 		FileInputStream workbookLocation = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\main\\java\\resources\\credentials.xlsx");
@@ -106,19 +141,16 @@ public class BasePage {
 				data[i][j] = row.getCell(j).toString();
 			}
 		}
-
-		return data;
+		if (rows.rowNumber().equals("")) {
+			return data;
+		}
+		int whichRow = Integer.parseInt(rows.rowNumber());
+		return new Object[][] { data[whichRow - 1] };
 
 	}
-
-	public boolean matchUrl(String expectedUrl, String currentUrl) {
-		if (expectedUrl.equals(currentUrl)) {
-			ExtentManager.pass("Reached correct url");
-			return true;
-		} else {
-			ExtentManager.fail("Reached incorrect url");
-			return false;
-		}
-
+	
+	public String getTitleByProp() {
+		title = prop.getProperty("publictitle");
+		return title;
 	}
 }

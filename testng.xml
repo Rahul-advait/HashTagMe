@@ -4,8 +4,9 @@
 <suite name="Preserve order test runs">
 	<test name="Regression 1" preserve-order="true">
 		<classes>
-			<class name="www.logytalks.com.ClickSignInBtn"></class>
-			<class name="www.logytalks.com.ClickSiginBtnDn"></class>
+
+			<class name="www.logytalks.com.RegistrationTest"></class>
+	
 		</classes>
 	</test>
 </suite>

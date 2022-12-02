@@ -22,6 +22,7 @@ public class Hooks extends BasePage {
 	public void tearDown() {
 		driver.close();
 		driver.quit();
+		driver = null;
 	}
 
 }

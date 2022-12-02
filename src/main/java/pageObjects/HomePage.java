@@ -9,7 +9,7 @@ public class HomePage {
 
 	public WebDriver driver;
 
-	By popOutClose = By.xpath("//div[@id='modal-subscribe']/div[@role='document']//button[@type='button']");
+	By popOutClose = By.cssSelector("div#modal-subscribe .close");
 	By popOutInputName = By.cssSelector("#name-subscriber");
 	By popOutInputEmail = By.cssSelector("#email-subscriber");
 	By popOutInputCategory = By.cssSelector("#email-subscriber");

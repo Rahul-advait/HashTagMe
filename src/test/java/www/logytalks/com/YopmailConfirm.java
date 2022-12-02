@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -16,6 +17,7 @@ import pageObjects.SignInPage;
 @Listeners(resources.Listeners.class)
 
 public class YopmailConfirm extends BasePage {
+
 	public YopmailConfirm() throws IOException {
 		super();
 	}
@@ -28,6 +30,7 @@ public class YopmailConfirm extends BasePage {
 
 	@AfterMethod
 	public void tearDown() {
+		System.out.println("after method");
 		driver.close();
 		driver.quit();
 	}
@@ -37,6 +40,7 @@ public class YopmailConfirm extends BasePage {
 			String foi) {
 
 		ExtentManager.log("Starting Yopmail confirmation test");
+
 		driver.findElement(By.cssSelector("#login")).sendKeys(email);
 
 		driver.findElement(By.cssSelector("button")).click();
@@ -46,6 +50,7 @@ public class YopmailConfirm extends BasePage {
 
 		driver.findElement(By.linkText("Verify Email Address")).click();
 
+		ExtentManager.pass("Clicked on verify link ");
 		driver.switchTo().parentFrame();
 
 		ArrayList<String> windowsHandles = new ArrayList<String>(driver.getWindowHandles());
@@ -54,9 +59,11 @@ public class YopmailConfirm extends BasePage {
 
 		SignInPage signin = new SignInPage(driver);
 
+		ExtentManager.log("Reached signup page");
 		signin.getemailInput().sendKeys(email);
 		signin.getpasswordInput().sendKeys(password);
 		signin.getsubmitLoginBtn().click();
 
+		Assert.fail();
 	}
 }

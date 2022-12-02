@@ -3,20 +3,13 @@
 <suite name="Failed suite [Preserve order test runs]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Regression 1(failed)">
     <classes>
-      <class name="www.logytalks.com.ClickSignInBtn">
+      <class name="www.logytalks.com.RegistrationTest">
         <methods>
-          <include name="clickRegistrationbtn"/>
-          <include name="setup"/>
+          <include name="registration"/>
+          <include name="navigateToRegisterPage"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- www.logytalks.com.ClickSignInBtn -->
-      <class name="www.logytalks.com.ClickSiginBtnDn">
-        <methods>
-          <include name="clickRegistrationbtnDn"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- www.logytalks.com.ClickSiginBtnDn -->
+      </class> <!-- www.logytalks.com.RegistrationTest -->
     </classes>
   </test> <!-- Regression 1(failed) -->
 </suite> <!-- Failed suite [Preserve order test runs] -->

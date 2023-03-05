@@ -5,7 +5,7 @@
 	<test name="Regression 1" preserve-order="true">
 		<classes>
 
-			<class name="www.logytalks.com.RegistrationTest"></class>
+			<class name="www.logytalks.com.SelectStock"></class>
 	
 		</classes>
 	</test>

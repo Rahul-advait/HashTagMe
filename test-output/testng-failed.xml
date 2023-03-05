@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="www.logytalks.com.CreatePublicConf">
+      <class name="www.logytalks.com.ClickSiginBtnDn">
         <methods>
-          <include name="publicConference"/>
+          <include name="clickRegistrationbtnDn"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- www.logytalks.com.CreatePublicConf -->
+      </class> <!-- www.logytalks.com.ClickSiginBtnDn -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

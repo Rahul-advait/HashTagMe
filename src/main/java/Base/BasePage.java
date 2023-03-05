@@ -1,5 +1,17 @@
 package Base;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.DataProvider;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,17 +25,6 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
 
-import org.apache.commons.io.FileUtils;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.DataProvider;
 
 public class BasePage {
 
@@ -63,7 +64,7 @@ public class BasePage {
 			}
 
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		}
 		return driver;
